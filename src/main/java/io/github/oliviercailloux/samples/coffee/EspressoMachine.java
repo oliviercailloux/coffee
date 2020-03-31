@@ -1,4 +1,4 @@
-package io.github.oliviercailloux.coffee;
+package io.github.oliviercailloux.samples.coffee;
 
 public interface EspressoMachine extends CoffeeMachine {
 	/**

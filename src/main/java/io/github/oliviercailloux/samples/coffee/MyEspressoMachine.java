@@ -1,4 +1,4 @@
-package io.github.oliviercailloux.coffee;
+package io.github.oliviercailloux.samples.coffee;
 
 /**
  * A specific espresso machine, that produces coffee of strength up to 20, whose
