@@ -9,8 +9,6 @@ package io.github.oliviercailloux.coffee;
  * for producing a coffee (of strength higher than zero) is an estimated 83 watt
  * hours.
  *
- * @author Olivier Cailloux
- *
  */
 public class DripCoffeeMaker implements CoffeeMachine {
 

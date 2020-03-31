@@ -5,8 +5,6 @@ package io.github.oliviercailloux.coffee;
  * power is 2000 watts, and that produces a coffee of strength <em>s</em> in
  * <em>140 + 2 * s</em> seconds.
  *
- * @author Olivier Cailloux
- *
  */
 public class MyEspressoMachine implements EspressoMachine {
 
