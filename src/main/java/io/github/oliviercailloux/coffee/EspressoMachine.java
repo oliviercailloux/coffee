@@ -10,10 +10,10 @@ public interface EspressoMachine extends CoffeeMachine {
 	public double getPower();
 
 	/**
-	 * {@inheritDoc} This quantity is computed as the power of this machine times
-	 * the time spent for producing the last coffee (converted for the right units),
-	 * plus an arbitrary amount of 15 watt hours for the start and shutdown
-	 * procedures.
+	 * {@inheritDoc} This quantity, if not zero, is computed as the power of this
+	 * machine times the time spent for producing the last coffee (converted for the
+	 * right units), plus an arbitrary amount of 15 watt hours for the start and
+	 * shutdown procedures.
 	 */
 	@Override
 	double getEnergySpent() throws IllegalStateException;
