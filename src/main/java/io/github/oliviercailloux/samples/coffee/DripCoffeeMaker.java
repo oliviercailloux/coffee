@@ -11,7 +11,8 @@ package io.github.oliviercailloux.samples.coffee;
  * </p>
  * <p>
  * The energy required for producing a coffee (of strength higher than zero) is
- * an estimated 83 watt hours.
+ * an estimated 83 <a href="https://en.wikipedia.org/wiki/Watt_hour">watt
+ * hours</a>.
  * </p>
  */
 public class DripCoffeeMaker implements CoffeeMachine {
