@@ -35,7 +35,13 @@ public interface CoffeeMachine {
 	public int getTimeForCoffee(double strength);
 
 	/**
+	 * <p>
 	 * Produces a coffee of the given strength.
+	 * </p>
+	 * <p>
+	 * (This increments the number of coffees produced, it does not block the
+	 * program or wait for anything.)
+	 * </p>
 	 *
 	 * @param strength a non-negative value, at most the {@link #getMaxStrength()}
 	 *                 value.
