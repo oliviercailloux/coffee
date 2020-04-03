@@ -3,8 +3,8 @@ package io.github.oliviercailloux.samples.coffee;
 /**
  * <p>
  * A machine that produces coffee of various strength. A strength is a
- * non-negative value. A value of zero for the strength represents the absence
- * of a coffee!
+ * non-negative value. A value of zero for the strength represents no drink at
+ * all.
  * </p>
  *
  * <p>
@@ -39,8 +39,10 @@ public interface CoffeeMachine {
 	 * Produces a coffee of the given strength.
 	 * </p>
 	 * <p>
-	 * (This increments the number of coffees produced, it does not block the
-	 * program or wait for anything.)
+	 * (This increments the number of coffees produced, it does not wait for
+	 * anything and thus does not
+	 * <a href="https://en.wikipedia.org/wiki/Blocking_(computing)">block</a> the
+	 * program.)
 	 * </p>
 	 *
 	 * @param strength a non-negative value, at most the {@link #getMaxStrength()}
