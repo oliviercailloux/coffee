@@ -13,6 +13,10 @@ package io.github.oliviercailloux.samples.coffee;
  * example, because it depends on how long the machine stays on after having
  * served the coffee.
  * </p>
+ * <p>
+ * All coffee machines must have a parameter-less static factory method named
+ * <code>newInstance</code> to create instances.
+ * </p>
  *
  * @author Olivier Cailloux
  *
