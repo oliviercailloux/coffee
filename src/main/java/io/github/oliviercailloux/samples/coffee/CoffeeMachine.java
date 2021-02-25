@@ -8,14 +8,10 @@ package io.github.oliviercailloux.samples.coffee;
  * </p>
  *
  * <p>
- * Note that this interface is very naïve. It is in general impossible to
- * associate a quantity of energy spent for producing a given coffee, for
- * example, because it depends on how long the machine stays on after having
- * served the coffee.
- * </p>
- * <p>
- * All coffee machines must have a parameter-less static factory method named
- * <code>newInstance</code> to create instances.
+ * This interface (naïvely) assumes that a specific quantity of energy is
+ * required for producing a coffee. This quantity may depend on the strength of
+ * the coffee. (This is naïve because this quantity may in general depend on
+ * multiple other factors.)
  * </p>
  *
  * @author Olivier Cailloux
@@ -67,8 +63,7 @@ public interface CoffeeMachine {
 	 *
 	 * @return a non-negative value, zero iff the last coffee produced had strength
 	 *         zero.
-	 * @throws IllegalStateException iff no coffee has ever been produced by this
-	 *                               machine.
+	 * @throws IllegalStateException iff this machine has never produced coffee.
 	 * @see #produceCoffee(double)
 	 */
 	public double getEnergySpent() throws IllegalStateException;
